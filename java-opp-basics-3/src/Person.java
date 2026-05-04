@@ -13,6 +13,51 @@ public class Person {
     private int IDnumber;
 
 
+    public Person(){
+       setName("What's your name:");
+       setGender("Male or Female:");
+       setAddress("Where are you from:");
+       setPhonenumber("Rghit phone number:");
+       setHigh(1.77);
+       setWigh(0.8);
+       setBorndate("10/8/2006");
+       setEmail("aliasmjadamro11@gmail.com");
+       setWork("eng");
+       setFamilysituation("ok");
+       setIDnumber(216559724);
+    }
+    public Person(String name , String gender , String address , String phonenumber , double high , double wigh , String borndate , String email , String work , String familysituation , int IDnumber){
+        setName("Ali");
+        setGender("Male ");
+        setAddress("jer");
+        setPhonenumber("0566687");
+        setHigh(1.77);
+        setWigh(0.8);
+        setBorndate("10/8/2006");
+        setEmail("aliasmjadamro11@gmail.com");
+        setWork("eng");
+        setFamilysituation("ok");
+        setIDnumber(216559724);
+
+    }
+    public Person(Person v){
+        setName(v.name);
+        setGender(v.gender);
+        setAddress(v.address);
+        setPhonenumber(v.getPhonenumber());
+        setHigh(v.high);
+        setWigh(v.wigh);
+        setBorndate(v.borndate);
+        setEmail(v.email);
+        setWork(v.work);
+        setFamilysituation(v.familysituation);
+        setIDnumber(v.IDnumber);
+
+    }
+
+
+
+
     public String getName(){
         return name;
     }
@@ -71,7 +116,7 @@ public class Person {
     public String getBorndate() {
         return borndate;
     }
-    public void setBorndate(String porndate) {
+    public void setBorndate(String borndate) {
         this.borndate = borndate;
     }
 
@@ -109,7 +154,11 @@ public class Person {
 
 
     public String toString(){
-        return "Name = " + getName() + "\n" + "Gender = " + getGender() + "\n" + "Addess = " + getAddress() + "\n" + "Phonrnumber = " + getPhonenumber() + "\n" + "High = " + getHigh() + "\n" + "Wigh = " + getWigh() +"\n" + "Birthday = " + getBorndate() + "\n" + "Email = " + getEmail() + "\n" + "Work = " + getWork() + "\n" + "Familysituation = " + getFamilysituation() + "\n" + "IDnumer = " + getIDnumber();
+        return "Name = " + getName() + "\n" + "Gender = " + getGender() + "\n" + "Addess = " +
+                getAddress() + "\n" + "Phonrnumber = " + getPhonenumber() + "\n" + "High = "
+                + getHigh() + "\n" + "Wigh = " + getWigh() +"\n" + "Birthday = " +
+                getBorndate() + "\n" + "Email = " + getEmail() + "\n" + "Work = " + getWork() + "\n" +
+                "Familysituation = " + getFamilysituation() + "\n" + "IDnumer = " + getIDnumber();
 
     }
 
