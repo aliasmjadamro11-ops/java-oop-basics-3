@@ -27,17 +27,17 @@ public class Person {
        setIDnumber(216559724);
     }
     public Person(String name , String gender , String address , String phonenumber , double high , double wigh , String borndate , String email , String work , String familysituation , int IDnumber){
-        setName("Ali");
-        setGender("Male ");
-        setAddress("jer");
-        setPhonenumber("0566687");
-        setHigh(1.77);
-        setWigh(0.8);
-        setBorndate("10/8/2006");
-        setEmail("aliasmjadamro11@gmail.com");
-        setWork("eng");
-        setFamilysituation("ok");
-        setIDnumber(216559724);
+        setName(name);
+        setGender(gender);
+        setAddress(address);
+        setPhonenumber(phonenumber);
+        setHigh(high);
+        setWigh(wigh);
+        setBorndate(borndate);
+        setEmail(email);
+        setWork(work);
+        setFamilysituation(familysituation);
+        setIDnumber(IDnumber);
 
     }
     public Person(Person v){
